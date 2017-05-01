@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorQuestionTitle">#02BEF8</color>
     <color name="colorSubmit">#02A7D4</color>
+    <color name="colorText">@android:color/holo_blue_dark</color>
 </resources>

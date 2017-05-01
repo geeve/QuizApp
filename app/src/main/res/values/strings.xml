@@ -16,4 +16,7 @@
     <string name="q2_b">Java</string>
     <string name="q2_c">JavaScript</string>
     <string name="q2_d">C#</string>
+    <string name="am1">"Your score is "</string>
+    <string name="am2">Congratulations! All the answers is correct!</string>
+    <string name="am3">"The error question is "</string>
 </resources>

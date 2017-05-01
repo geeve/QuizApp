@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         String answerQ4 = q4.getText().toString().toLowerCase();
 
         String correctAnswerQ4Key1 = "vertical";
-        String correctAnswerQ4Key2 = "vertical";
+        String correctAnswerQ4Key2 = "horizontal";
 
         if(answerQ4.contains(correctAnswerQ4Key1) && answerQ4.contains(correctAnswerQ4Key2)){
             return 1;
@@ -123,13 +123,13 @@ public class MainActivity extends AppCompatActivity {
         //每个题目判断函数答对得1分，答错不得分，直接相加就得到总分。
         score = getQ1Answers() +getQ2Answers() + getQ3Answers() +getQ4Answers();
 
-        answerMessage += "Your score is "+score+".";
+        answerMessage += getString(R.string.am1)+score+".";
 
         //满分提示和有错误提示不一样
         if(score == 4){
-            answerMessage += "Congratulations! All the answers is correct!";
+            answerMessage += getString(R.string.am2);
         }else{
-            answerMessage += "The error question is ";
+            answerMessage += getString(R.string.am3);
 
             //找出错误的题目号
             if(getQ1Answers()!=1){
